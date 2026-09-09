@@ -150,7 +150,7 @@ section { padding: 90px 0; }
 
 /* COLOR CARDS */
 .color-grid {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;
 }
 @media (max-width: 900px) { .color-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
@@ -165,7 +165,6 @@ section { padding: 90px 0; }
 
 .amber-rauch .color-photo { background: radial-gradient(circle at 40% 30%, #ff8a3d 0%, #b5451c 45%, #241109 85%); }
 .salbei-ton .color-photo { background: radial-gradient(circle at 40% 30%, #b8d68a 0%, #5d7a3e 45%, #12180a 85%); }
-.mitternacht-kupfer .color-photo { background: radial-gradient(circle at 40% 30%, #d98a4e 0%, #2e3a52 55%, #0a0d12 85%); }
 .kreide-koralle .color-photo { background: radial-gradient(circle at 40% 30%, #ffb199 0%, #d9d0c4 50%, #211b17 85%); }
 
 /* LIFESTYLE COLLAGE */
