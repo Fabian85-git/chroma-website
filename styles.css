@@ -106,7 +106,7 @@ a:hover { color: var(--ink-soft); }
   background: linear-gradient(100deg, rgba(10,9,8,.8) 0%, rgba(10,9,8,.45) 42%, rgba(10,9,8,0) 72%);
 }
 .hero-copy {
-  position: relative; z-index: 2; padding: 64px 48px; max-width: 480px;
+  position: relative; z-index: 2; padding: 64px 0; max-width: 480px;
 }
 .hero-copy h1 {
   margin: 0; font-size: clamp(26px, 3vw, 34px); font-weight: 600; line-height: 1.35;
@@ -118,7 +118,7 @@ a:hover { color: var(--ink-soft); }
 
 @media (max-width: 700px) {
   .hero { min-height: 380px; }
-  .hero-copy { padding: 40px 24px; }
+  .hero-copy { padding: 40px 0; }
 }
 
 /* SECTIONS */
