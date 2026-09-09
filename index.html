@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chroma — Ein Lichtobjekt für den Alltag</title>
+<meta name="description" content="Chroma ist eine 3D-gedruckte Leuchte aus der Schweiz: geometrische Form, warmes Ambientlicht, in mehreren Farbkombinationen. Jedes Stück ein Unikat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="lampMark" viewBox="0 0 100 120">
+      <rect x="20" y="6" width="60" height="34" rx="4"/>
+      <rect x="32" y="44" width="36" height="30" rx="3"/>
+      <path d="M22 94 C22 100 26 106 50 106 C74 106 78 100 78 94 L78 80 C78 74 74 68 50 68 C26 68 22 74 22 80 Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="wrap nav">
+  <a class="nav-brand" href="/">
+    <svg viewBox="0 0 100 120"><use href="#lampMark"/></svg>
+    <span class="h-font">Chroma</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#top">Home</a>
+    <a href="#farben">Shop</a>
+  </nav>
+  <div class="nav-right">
+    <a href="https://YOUR-SHOP.payrexx.com" class="nav-cart" aria-label="Zum Shop">
+      <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 12.4A2 2 0 0 0 9.4 18h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+    </a>
+    <button class="nav-toggle" aria-label="Menü">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="nav-mobile-panel">
+  <a href="#top">Home</a>
+  <a href="#farben">Shop</a>
+</div>
+
+<section id="top" class="hero">
+  <svg class="lamp-silhouette" viewBox="0 0 100 120"><use href="#lampMark"/></svg>
+  <div class="hero-copy">
+    <h1>Ein Lichtobjekt für den Alltag.<br>Tagsüber Form, nachts warmes Ambientlicht.</h1>
+  </div>
+  <span class="photo-label">Foto — Amber Rauch, bei Nacht</span>
+</section>
+
+<section id="produkt">
+  <div class="wrap intro-split">
+    <div class="intro-photo">
+      <svg viewBox="0 0 100 120"><use href="#lampMark"/></svg>
+      <span class="photo-label" style="position:absolute; bottom:10px; right:12px; font-size:9px;">Foto — Kreide Koralle</span>
+    </div>
+    <div class="intro-copy">
+      <p>Chroma ist ein Designobjekt, das im Raum auffallen soll. Nicht nur, wenn es leuchtet. Die Form ist klar: ein Quadrat auf einem zylindrischen Fuss, modular aus drei gedruckten Teilen zusammengesetzt.</p>
+      <p>Die Farbe macht jedes Chroma zu einem Unikat und bestimmt gleichzeitig, wie das Licht in der Nacht wirkt: Das Material des Deckels ist es, das dem Ambientlicht seine Farbe gibt. So wird aus einer bewusst gewählten Farbkombination bei Tag ein warmer, eigenständiger Lichtton bei Nacht.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap aufbau">
+    <div class="aufbau-part">
+      <div class="aufbau-shape" style="width:100px; height:30px; border-radius:2px;"></div>
+      <div><div class="cap">Teil 1</div><div class="aufbau-name">Deckel</div></div>
+    </div>
+    <div class="aufbau-part">
+      <div class="aufbau-shape" style="width:80px; height:66px; border-radius:2px;"></div>
+      <div><div class="cap">Teil 2</div><div class="aufbau-name">Korpus</div></div>
+    </div>
+    <div class="aufbau-part">
+      <div class="aufbau-shape" style="width:110px; height:36px; border-radius:18px;"></div>
+      <div><div class="cap">Teil 3</div><div class="aufbau-name">Zylinder-Fuss</div></div>
+    </div>
+    <p class="aufbau-text">Chroma besteht aus drei Teilen: Fuss, Korpus und Deckel. Jeder Teil kann farblich unterschiedlich gestaltet sein – daraus entstehen die Farbkombinationen, die Chroma ausmachen.</p>
+  </div>
+</section>
+
+<section id="farben">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Vier Stimmungen, eine Form</h2>
+    </div>
+    <div class="color-grid">
+
+      <div class="color-card amber-rauch">
+        <div class="color-photo"><span class="photo-label">Foto</span></div>
+        <div class="color-body">
+          <div class="name">Amber Rauch</div>
+          <p class="sub">Warmer Bernstein-Deckel mit rauchigem Grau-Korpus. Nachts: warmes Bernstein-Licht.</p>
+          <a href="https://YOUR-SHOP.payrexx.com" class="btn">Im Shop ansehen</a>
+          <div class="color-price">[CHF ___]</div>
+        </div>
+      </div>
+
+      <div class="color-card salbei-ton">
+        <div class="color-photo"><span class="photo-label">Foto</span></div>
+        <div class="color-body">
+          <div class="name">Salbei Ton</div>
+          <p class="sub">Gedämpftes Salbeigrün mit Terracotta. Nachts: weiches, erdiges Licht.</p>
+          <a href="https://YOUR-SHOP.payrexx.com" class="btn">Im Shop ansehen</a>
+          <div class="color-price">[CHF ___]</div>
+        </div>
+      </div>
+
+      <div class="color-card mitternacht-kupfer">
+        <div class="color-photo"><span class="photo-label">Foto</span></div>
+        <div class="color-body">
+          <div class="name">Mitternacht Kupfer</div>
+          <p class="sub">Tiefes Blau/Anthrazit mit Kupfer-Akzent. Nachts: warmer Kupferschimmer.</p>
+          <a href="https://YOUR-SHOP.payrexx.com" class="btn">Im Shop ansehen</a>
+          <div class="color-price">[CHF ___]</div>
+        </div>
+      </div>
+
+      <div class="color-card kreide-koralle">
+        <div class="color-photo"><span class="photo-label">Foto</span></div>
+        <div class="color-body">
+          <div class="name">Kreide Koralle</div>
+          <p class="sub">Helles Kreideweiss mit Koralle/Pfirsich. Nachts: sanftes Korallenlicht.</p>
+          <a href="https://YOUR-SHOP.payrexx.com" class="btn">Im Shop ansehen</a>
+          <div class="color-price">[CHF ___]</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap collage">
+    <div class="collage-big">
+      <span class="photo-label">Foto — Amber Rauch, Raumszene</span>
+    </div>
+    <div class="collage-stack">
+      <div class="collage-small">
+        <span class="photo-label" style="font-size:9px;">Foto — Detail, Nacht</span>
+      </div>
+      <div class="collage-small alt">
+        <span class="photo-label" style="font-size:9px;">Foto — Detail, Tag</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap two-col">
+    <div>
+      <span class="cap">Material &amp; Herstellung</span>
+      <p>Chroma wird in der Schweiz aus PLA gedruckt, einem biobasierten Kunststoff, der sich für die feinen geometrischen Formen und satten Farben von Chroma besonders eignet.</p>
+      <p>Da jedes Stück im 3D-Druckverfahren einzeln entsteht, zeigt jede Lampe leichte Variationen in Farbe und Textur. Das ist kein Fehler, sondern Teil des Herstellungsprozesses – jedes Chroma ist dadurch ein Unikat.</p>
+    </div>
+    <div>
+      <span class="cap">Lieferumfang</span>
+      <p>Chroma-Leuchte — 3-teilig, in gewählter Farbkombination</p>
+      <p>LED-Leuchtmittel — E14, 4.2 W, 470 lm, nicht dimmbar</p>
+      <p>Anschlusskabel — 2 m, mit Schalter und T26-Stecker</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:680px;">
+    <div class="section-head"><h2>FAQ</h2></div>
+    <div style="display:flex; flex-direction:column; gap:26px;">
+      <div>
+        <div class="aufbau-name">Ist Chroma für draussen geeignet?</div>
+        <p class="aufbau-text" style="max-width:none;">Nein, Chroma ist für den Innenbereich konzipiert (Schutzart IP20).</p>
+      </div>
+      <div>
+        <div class="aufbau-name">Warum sieht jede Lampe leicht anders aus?</div>
+        <p class="aufbau-text" style="max-width:none;">Chroma wird im 3D-Druckverfahren einzeln gefertigt. Kleine Variationen in Farbe und Textur sind herstellungsbedingt und machen jedes Stück zu einem Unikat.</p>
+      </div>
+      <div>
+        <div class="aufbau-name">Ist das Leuchtmittel dimmbar?</div>
+        <p class="aufbau-text" style="max-width:none;">Nein, das mitgelieferte LED-Leuchtmittel (E14, 4.2 W) ist nicht dimmbar.</p>
+      </div>
+      <div>
+        <div class="aufbau-name">Kann ich ein anderes Leuchtmittel verwenden?</div>
+        <p class="aufbau-text" style="max-width:none;">Aus Sicherheitsgründen empfehlen wir, nur Leuchtmittel mit vergleichbarer oder geringerer Leistung (max. 4.2 W) zu verwenden.</p>
+      </div>
+      <div>
+        <div class="aufbau-name">Versendet ihr auch ins Ausland?</div>
+        <p class="aufbau-text placeholder" style="max-width:none;">[Antwort ergänzen, sobald die Versand-Entscheidung feststeht.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ueber-mich" class="section-alt">
+  <div class="wrap about-teaser">
+    <span class="cap">Über mich</span>
+    <div class="about-avatar" style="margin-top:20px;">F</div>
+    <p>Ich bin Fabian – Interaction Designer aus Winterthur. Sonst arbeite ich an digitalen Produkten; mit Chroma entwerfe, teste und drucke ich zum ersten Mal auch etwas Physisches, vom Entwurf bis zur Farbe.</p>
+    <a href="ueber-mich.html">Mehr über mich →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <svg viewBox="0 0 100 120"><use href="#lampMark"/></svg>
+      <span>© Chroma, chroma-light.com</span>
+    </div>
+    <span class="footer-email">hello@chroma-light.com</span>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
