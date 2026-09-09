@@ -93,8 +93,6 @@ a:hover { color: var(--ink-soft); }
 .hero {
   position: relative;
   min-height: 520px;
-  display: flex;
-  align-items: flex-start;
   overflow: hidden;
   background: #0e0d0c;
 }
