@@ -174,7 +174,9 @@ section { padding: 90px 0; }
 .collage-stack { display: flex; flex-direction: column; gap: 16px; }
 .collage-small { flex: 1; position: relative; overflow: hidden; background: var(--bg-alt); }
 .collage-small.alt { background: var(--bg-alt); }
-.collage-big img, .collage-small img {
+.collage-bottom { height: 380px; position: relative; overflow: hidden; background: var(--bg-alt); }
+.collage-bottom.alt { background: var(--bg-alt); }
+.collage-big img, .collage-small img, .collage-bottom img {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;
 }
 @media (max-width: 800px) {
@@ -182,6 +184,7 @@ section { padding: 90px 0; }
   .collage-big { height: 420px; }
   .collage-stack { flex-direction: row; }
   .collage-small { height: 260px; }
+  .collage-bottom { height: 300px; }
 }
 
 /* MATERIAL / LIEFERUMFANG — plain two-column */
