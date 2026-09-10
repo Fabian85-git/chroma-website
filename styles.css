@@ -170,10 +170,13 @@ section { padding: 90px 0; }
 
 /* LIFESTYLE COLLAGE */
 .collage { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
-.collage-big { height: 520px; position: relative; background: radial-gradient(circle at 55% 40%, #d43a2e 0%, #6e1a18 40%, #160a09 80%); }
+.collage-big { height: 520px; position: relative; overflow: hidden; background: var(--bg-alt); }
 .collage-stack { display: flex; flex-direction: column; gap: 16px; }
-.collage-small { flex: 1; position: relative; background: radial-gradient(circle at 45% 35%, #ff6a3d 0%, #7a2810 50%, #1a0d08 85%); }
-.collage-small.alt { background: radial-gradient(circle at 45% 35%, #ffb199 0%, #b5563a 45%, #1a0d08 85%); }
+.collage-small { flex: 1; position: relative; overflow: hidden; background: var(--bg-alt); }
+.collage-small.alt { background: var(--bg-alt); }
+.collage-big img, .collage-small img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;
+}
 @media (max-width: 800px) {
   .collage { grid-template-columns: 1fr; }
   .collage-big { height: 300px; }
