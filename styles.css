@@ -65,10 +65,10 @@ a:hover { color: var(--ink-soft); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 84px;
+  height: 108px;
 }
 .nav-brand { display: flex; align-items: center; gap: 10px; }
-.nav-logo { height: 42px; width: auto; display: block; }
+.nav-logo { height: 50px; width: auto; display: block; }
 .nav-brand span { font-size: 17px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
