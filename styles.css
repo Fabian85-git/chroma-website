@@ -191,7 +191,7 @@ section { padding: 90px 0; }
 @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; gap: 40px; } }
 
 /* ABOUT */
-.about-teaser { max-width: 480px; margin: 0 auto; text-align: center; }
+.about-teaser { max-width: 680px; margin: 0 auto; text-align: center; }
 .about-avatar {
   width: 96px; height: 96px; border-radius: 50%; margin: 0 auto 24px;
   background: linear-gradient(155deg, #3a3632, #17140f);
