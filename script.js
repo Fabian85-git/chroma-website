@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
       introPhoto.classList.toggle('day-active');
     });
   }
+
+  if (window.jQuery && jQuery.fn.payrexxModal) {
+    jQuery('.btn-payrexx-modal').payrexxModal();
+  }
 });
