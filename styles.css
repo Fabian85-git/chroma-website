@@ -157,6 +157,7 @@ section { padding: 90px 0; }
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;
 }
 @media (max-width: 900px) { .color-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .color-grid { grid-template-columns: 1fr; } }
 
 .color-card { display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); }
 .color-photo { aspect-ratio: 1 / 1; position: relative; overflow: hidden; background: var(--bg-alt); }
