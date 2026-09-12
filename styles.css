@@ -58,6 +58,7 @@ a:hover { color: var(--ink-soft); }
   color: var(--ink);
 }
 .btn-solid { background: var(--ink); color: var(--bg); }
+.btn-disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
 .btn:hover { opacity: .8; }
 
 /* NAV */
