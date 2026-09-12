@@ -72,8 +72,6 @@ a:hover { color: var(--ink-soft); }
 .nav-brand span { font-size: 17px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
-.nav-cart { display: inline-flex; }
-.nav-cart svg { width: 20px; height: 20px; stroke: var(--ink); fill: none; stroke-width: 1.5; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--ink); }
 .nav-toggle svg { width: 22px; height: 22px; }
 .nav-mobile-panel { display: none; }
