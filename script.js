@@ -68,5 +68,33 @@ document.addEventListener('DOMContentLoaded', function () {
     photo.appendChild(prevBtn);
     photo.appendChild(nextBtn);
     photo.appendChild(dotsWrap);
+
+    // Swipe-Geste fuer Touch-Geraete
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchActive = false;
+
+    photo.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) return;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchActive = true;
+    }, { passive: true });
+
+    photo.addEventListener('touchend', function (e) {
+      if (!touchActive) return;
+      touchActive = false;
+      var touch = e.changedTouches[0];
+      var dx = touch.clientX - touchStartX;
+      var dy = touch.clientY - touchStartY;
+      var threshold = 40;
+      if (Math.abs(dx) > threshold && Math.abs(dx) > Math.abs(dy)) {
+        if (dx < 0) {
+          goTo(current + 1);
+        } else {
+          goTo(current - 1);
+        }
+      }
+    }, { passive: true });
   });
 });
