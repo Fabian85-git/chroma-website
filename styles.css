@@ -155,9 +155,8 @@ section { padding: 90px 0; }
 
 /* COLOR CARDS */
 .color-grid {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;
 }
-@media (max-width: 900px) { .color-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .color-grid { grid-template-columns: 1fr; } }
 
 .color-card { display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); }
