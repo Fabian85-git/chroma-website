@@ -174,9 +174,14 @@ section { padding: 90px 0; }
 }
 .intro-copy { flex: 1; }
 .intro-copy p { margin: 0 0 16px; font-size: 16px; line-height: 1.75; color: var(--ink-soft); }
+.intro-split + .intro-split { margin-top: 100px; }
+@media (min-width: 801px) {
+  .intro-split-reverse { flex-direction: row-reverse; }
+}
 @media (max-width: 800px) {
   .intro-split { flex-direction: column; }
   .intro-photo { flex: none; width: 100%; aspect-ratio: 1 / 1; }
+  .intro-split + .intro-split { margin-top: 60px; }
 }
 
 /* AUFBAU */
