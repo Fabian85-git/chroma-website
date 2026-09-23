@@ -7,12 +7,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var introPhoto = document.querySelector('.intro-photo-hover');
-  if (introPhoto) {
-    introPhoto.addEventListener('click', function () {
-      introPhoto.classList.toggle('day-active');
-    });
+  // Tag/Nacht Theme-Umschalter
+  var THEME_KEY = 'chroma-theme';
+  var themeBtns = document.querySelectorAll('.theme-btn');
+
+  function getCurrentTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'night' ? 'night' : 'day';
   }
+
+  function setTheme(theme, persist) {
+    if (theme === 'night') {
+      document.documentElement.setAttribute('data-theme', 'night');
+    } else {
+      theme = 'day';
+      document.documentElement.removeAttribute('data-theme');
+    }
+    if (persist) {
+      try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+    }
+    themeBtns.forEach(function (btn) {
+      var isActive = btn.getAttribute('data-theme-btn') === theme;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    document.dispatchEvent(new CustomEvent('chroma:theme', { detail: { theme: theme } }));
+  }
+
+  themeBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      setTheme(btn.getAttribute('data-theme-btn'), true);
+    });
+  });
+
+  setTheme(getCurrentTheme(), false);
 
   if (window.jQuery && jQuery.fn.payrexxModal) {
     jQuery('.btn-payrexx-modal').payrexxModal();
@@ -64,6 +91,27 @@ document.addEventListener('DOMContentLoaded', function () {
       dotsWrap.appendChild(dot);
       dots.push(dot);
     });
+
+    // Tag/Nacht: Karussell auf das themapassende Bild setzen
+    var dayIndex = -1;
+    var nightIndex = -1;
+    imgs.forEach(function (img, i) {
+      var def = img.getAttribute('data-theme-default');
+      if (def === 'day' && dayIndex === -1) dayIndex = i;
+      if (def === 'night' && nightIndex === -1) nightIndex = i;
+    });
+
+    function applyGlobalTheme(theme) {
+      var idx = theme === 'night' ? nightIndex : dayIndex;
+      if (idx !== -1) goTo(idx);
+    }
+
+    if (dayIndex !== -1 || nightIndex !== -1) {
+      applyGlobalTheme(getCurrentTheme());
+      document.addEventListener('chroma:theme', function (e) {
+        applyGlobalTheme(e.detail.theme);
+      });
+    }
 
     photo.appendChild(prevBtn);
     photo.appendChild(nextBtn);
