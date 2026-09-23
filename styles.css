@@ -138,17 +138,17 @@ a:hover { color: var(--ink-soft); }
 .hero-photo {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;
 }
-.hero::before {
+[data-theme="night"] .hero::before {
   content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(100deg, rgba(10,9,8,.8) 0%, rgba(10,9,8,.45) 42%, rgba(10,9,8,0) 72%);
 }
 .hero-copy {
   position: relative; z-index: 2; padding: 64px 0; max-width: 520px;
-  color: #f5f1ea;
+  color: var(--ink);
 }
 .hero-copy h1 {
   margin: 0; font-size: clamp(26px, 3vw, 34px); font-weight: 600; line-height: 1.35;
-  color: #f5f1ea;
+  color: inherit;
 }
 
 @media (max-width: 700px) {
